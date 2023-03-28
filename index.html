@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>project 1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>My Task Board</h1>
+    <div class="col-6 , container">
+      <form class="form">
+        <div class="mb-3">
+          <label for="task" class="form-label" id="taskText">Task:</label>
+          <input
+            type="text"
+            class="custom-text"
+            id="task"
+            name="name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="date" class="form-label" id="dateText">Date:</label>
+          <input
+            type="date"
+            class="custom-text"
+            id="date"
+            name="date"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="hour" class="form-label" id="hourText">Hour:</label>
+          <input type="time" class="custom-text" id="hour" name="hour" />
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+        <button type="button" id="btn" class="btn btn-danger">Remove</button>
+      </form>
+      <div class="row" id="taskContainer"></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
