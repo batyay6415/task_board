@@ -2,6 +2,7 @@ h1 {
   text-align: center;
   font-family: Cursive;
   font-weight: bold;
+  text-shadow: 5px 5px 10px aqua;
 }
 body {
   background-image: url(images/tile.jpg);
